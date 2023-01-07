@@ -61,6 +61,6 @@ userSchema.methods.comparePassword = async function (password) {
 }
 
 
-userSchema.index({ otp_expiry: 1 }, { expireAfterSeconds: 0 })
+// userSchema.index({ otp_expiry: 1 }, { expireAfterSeconds: 0 })
 
 export const User = mongoose.model("User", userSchema)
